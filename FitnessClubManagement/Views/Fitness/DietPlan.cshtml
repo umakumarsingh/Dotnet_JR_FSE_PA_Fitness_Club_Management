@@ -1,0 +1,25 @@
+﻿@model IEnumerable<FitnessClubManagement.Entities.DietPlan>
+@{
+    ViewData["Title"] = "DietPlan";
+}
+
+<h1>DietPlan</h1>
+
+<div class="row mb-2">
+    @foreach (var diet in Model)
+    {
+        <div class="col-md-12">
+            <div class="card flex-md-row mb-4 box-shadow h-auto">
+                <div class="card-body d-flex flex-column align-items-start">
+                    <strong class="d-inline-block mb-2 text-primary">Plan Overview :- @diet.PlanOverview</strong>
+                    <h3 class="mb-0">
+                        <a class="text-dark" href="#">@diet.Name</a>
+                    </h3>
+                    <div class="mb-1 text-muted"><strong>Description : </strong>@diet.Descriprtion</div>
+                    <a href="@Url.Action("DietPlanDetails","Fitness", new { DietplanId = diet.DietplanId, @class = "btn btn-primary" })">Continue reading...</a>
+                </div>
+            </div>
+        </div>
+     }
+</div>
+

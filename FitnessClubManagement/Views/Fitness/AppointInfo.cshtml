@@ -1,0 +1,34 @@
+﻿@model IEnumerable<FitnessClubManagement.Entities.Appointment>
+@{
+    ViewData["Title"] = "AppointInfo";
+}
+
+<div class="container text-center" style="margin-top:10px">
+    <div class="jumbotron mt-3">
+        <h1>Appointment Information</h1>
+        <p class="lead">Thanku for Booking with us your Operator will be contacted soon....</p>
+        @Html.ActionLink("Home", "Index", "Fitness", new { @class = "btn btn-primary" })
+    </div>
+</div>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>@Html.DisplayNameFor(m => m.AppointmentId)</th>
+            <th>@Html.DisplayNameFor(m => m.FullName)</th>
+            <th>@Html.DisplayNameFor(m => m.PhoneNumber)</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var order in Model)
+        {
+            <tr>
+                <td>@order.AppointmentId</td>
+                <td>@order.FullName</td>
+                <td>@order.PhoneNumber</td>
+                <td>Soon we Contact</td>
+            </tr>
+        }
+    </tbody>
+</table>
+

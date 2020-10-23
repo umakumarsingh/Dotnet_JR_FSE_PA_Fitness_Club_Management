@@ -1,0 +1,26 @@
+﻿@model IEnumerable<FitnessClubManagement.Entities.Instructor>
+@{
+    ViewData["Title"] = "GymInstructor";
+}
+<h1>Gym Instructor Details</h1>
+<div class="row mb-2">
+    @foreach (var inst in Model)
+    {
+        <div class="col-md-12">
+            <div class="card flex-md-row mb-4 box-shadow h-auto">
+                <div class="card-body d-flex flex-column align-items-start">
+                    <strong class="d-inline-block mb-2 text-primary">Profession :- @inst.Profession</strong>
+                    <h3 class="mb-0">
+                        <a class="text-dark" href="#">Competition : @inst.Competition</a>
+                    </h3>
+                    <div class="mb-1 text-muted"><strong>Top Placing : </strong>@inst.TopPlacing</div>
+                    <div class="mb-1 text-muted"><strong>About : </strong>@inst.About</div>
+                    <div class="mb-1 text-muted"><strong>SuggestedWorkOut : </strong>@inst.SuggestedWorkOut</div>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+
+

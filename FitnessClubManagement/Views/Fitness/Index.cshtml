@@ -1,0 +1,44 @@
+﻿@model FitnessClubManagement.BusinessLayer.ViewModels.WorkoutViewModel
+@{
+    ViewData["Title"] = "Index";
+}
+<h1 class="text-center">All work out for your body that make you helthy</h1>
+@if (Model.PageCount() == 0)
+{
+    <tr>
+        <td style="color:red;" colspan="12">
+            Records not found |
+            @Html.ActionLink("Go To Home", "Index", "Fitness", new { @class = "btn btn-primary" })
+        </td>
+    </tr>
+}
+else
+{
+    <div class="row mb-2">
+        @foreach (var workout in Model.PaginatedWorkout())
+        {
+            <div class="col-md-6">
+                <div class="card flex-md-row mb-4 box-shadow h-auto">
+                    <div class="card-body d-flex flex-column align-items-start">
+                        <strong class="d-inline-block mb-2 text-primary">Workout Goal :- @workout.MainGoal</strong>
+                        <h3 class="mb-0">
+                            <a class="text-dark" href="#">@workout.Name</a>
+                        </h3>
+                        <div class="mb-1 text-muted"><strong>Short Description : </strong>@workout.Descriprtion</div>
+                        <p class="card-text mb-auto"><strong>Workout Type :- </strong>@workout.WorkoutType</p>
+                        <a href="@Url.Action("Details","Fitness", new { WorkoutId = workout.WorkoutId, @class = "btn btn-primary" })">Continue reading...</a>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+}
+<ul class="pagination">
+    @for (int i = 1; i <= Model.PageCount(); i++)
+    {
+        <li class="@(i == Model.CurrentPage ? "page-item active" : "page-item")">
+            <a class="page-link" href="@Url.Action("Index", new { page = i })">@i</a>
+        </li>
+
+    }
+</ul>

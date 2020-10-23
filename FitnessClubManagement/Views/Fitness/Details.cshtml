@@ -1,0 +1,38 @@
+﻿@model FitnessClubManagement.Entities.Workout
+@{
+    ViewData["Title"] = "Place Details";
+}
+<div class="card" style="width:100%; margin-top:10px;">
+    <div class="card-header bg-dark text-white">
+        <h5>Workout Details</h5>
+    </div>
+    <div class="card-body">
+        <div class="row mb-2">
+            <div class="col-md-12">
+                <div class="card flex-md-row mb-4 box-shadow h-auto">
+                    <div class="card-body d-flex flex-column align-items-start">
+                        <strong class="d-inline-block mb-2 text-primary">Workout Goal :- @Html.DisplayFor(m => m.MainGoal)</strong>
+                        <h3 class="mb-0">
+                            <a class="text-dark" href="#">@Html.DisplayFor(m => m.Name)</a>
+                        </h3>
+                        <div class="mb-1 text-dark"><strong>Short Description : </strong>@Html.DisplayFor(m => m.Descriprtion)</div>
+                        <p class="card-text mb-auto"><strong>Workout Type :- </strong>@Html.DisplayFor(m => m.WorkoutType)</p>
+                        <p class="card-text mb-auto"><strong>Training Level :- </strong>@Html.DisplayFor(m => m.TrainingLevel)</p>
+                        <p class="card-text mb-auto"><strong>Program Duration :- </strong>@Html.DisplayFor(m => m.ProgramDuration)</p>
+                        <p class="card-text mb-auto"><strong>Days Per Week :- </strong>@Html.DisplayFor(m => m.DaysPerWeek)</p>
+                        <p class="card-text mb-auto"><strong>Time PerWork kout :- </strong>@Html.DisplayFor(m => m.TimePerWorkout)</p>
+                        <p class="card-text mb-auto"><strong>Equipment Required :- </strong>@Html.DisplayFor(m => m.EquipmentRequired)</p>
+                        <p class="card-text mb-auto"><strong>Target Gender :- </strong>@Html.DisplayFor(m => m.TargetGender)</p>
+                        <p class="card-text mb-auto"><strong>Recommended Supplements :- </strong>@Html.DisplayFor(m => m.RecommendedSupplements)</p>
+                        <p class="card-text mb-auto"><strong>Target Gender :- </strong>@Html.DisplayFor(m => m.TargetGender)</p>
+                        <p class="card-text mb-auto"><strong>Author :- </strong>@Html.DisplayFor(m => m.Author)</p>
+                        <p class="card-text mb-auto"><strong>Workout Details PDF:- </strong>@Html.DisplayFor(m => m.WorkoutPDF)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p>
+            @Html.ActionLink("Back to Home", "Index", "Fitness", new { @class = "btn btn-primary" })
+        </p>
+    </div>
+</div>
