@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "IoH5mNGH7yPCCyZfT//QNGgvmrEHGQHMejHILWMu7rf8uatucW0nfHtV6wKwinwjJEv8dx3xS/2NN2pSfbeHgQ==",
+  "dgSpecHash": "TJCUTVlC/omZAnPDBgyoPy7lBkV+fdikusfdq59MYPIJqfnP+PbNBd6caxjQU4ISTQCJYZGfrkKynMaC44rNDA==",
   "success": true,
-  "projectFilePath": "D:\\IIHT\\Task-12\\InMemory\\FitnessClubManagement.DataLayer\\FitnessClubManagement.DataLayer.csproj",
+  "projectFilePath": "C:\\Users\\KUMARUMA\\Documents\\GitHub\\Dotnet_JR_FSE_PA_Fitness_Club_Management\\FitnessClubManagement.DataLayer\\FitnessClubManagement.DataLayer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\KUMARUMA\\.nuget\\packages\\microsoft.entityframeworkcore\\2.2.0\\microsoft.entityframeworkcore.2.2.0.nupkg.sha512",
     "C:\\Users\\KUMARUMA\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\2.2.0\\microsoft.entityframeworkcore.abstractions.2.2.0.nupkg.sha512",

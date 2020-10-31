@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/+jCmjnZT62xXoxu5YF2iOkdhUbUED25kisA+mOjjWrsiuouuP3SwGfCqKLcYfoTa8uUPCh/7jLSNajMFShTeg==",
+  "dgSpecHash": "JUDCeYUol9B4geCJyRaH2cHTFRa6jM+/78L41PoXaf5PGu6zefhCUpq7WeholHMyA4Cju9v8zPH/gqgwU8JXFg==",
   "success": true,
-  "projectFilePath": "D:\\IIHT\\Task-12\\InMemory\\FitnessClubManagement\\FitnessClubManagement.csproj",
+  "projectFilePath": "C:\\Users\\KUMARUMA\\Documents\\GitHub\\Dotnet_JR_FSE_PA_Fitness_Club_Management\\FitnessClubManagement\\FitnessClubManagement.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\KUMARUMA\\.nuget\\packages\\microsoft.aspnet.webapi.client\\5.2.6\\microsoft.aspnet.webapi.client.5.2.6.nupkg.sha512",
     "C:\\Users\\KUMARUMA\\.nuget\\packages\\microsoft.aspnetcore\\2.2.0\\microsoft.aspnetcore.2.2.0.nupkg.sha512",

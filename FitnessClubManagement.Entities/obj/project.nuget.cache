@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "0Ra1yjQTvknu2YXMf2R/7tCYgCvfhQtdNnfbvGGCIYnTrBAT88bPWUo3oYUwbpf4/qeXkjJNt/rdU5WVdZ7UBQ==",
+  "dgSpecHash": "MOt+8XSBBnnKzYcAbkwf4Q+YyW453Zo64PnxJ3LX/FEL9NScDU7rKIas9MQaFqaBpv7X/ewPFefSxFw8w8Q84g==",
   "success": true,
-  "projectFilePath": "D:\\IIHT\\Task-12\\InMemory\\FitnessClubManagement.Entities\\FitnessClubManagement.Entities.csproj",
+  "projectFilePath": "C:\\Users\\KUMARUMA\\Documents\\GitHub\\Dotnet_JR_FSE_PA_Fitness_Club_Management\\FitnessClubManagement.Entities\\FitnessClubManagement.Entities.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\KUMARUMA\\.nuget\\packages\\microsoft.netcore.app\\2.2.0\\microsoft.netcore.app.2.2.0.nupkg.sha512",
     "C:\\Users\\KUMARUMA\\.nuget\\packages\\microsoft.netcore.dotnetapphost\\2.2.0\\microsoft.netcore.dotnetapphost.2.2.0.nupkg.sha512",

@@ -29,26 +29,8 @@ namespace FitnessClubManagement.Controllers
         [HttpGet]
         public async Task<IActionResult> Index(string search, int page = 1)
         {
-            if (search != null)
-            {
-                var intView = new WorkoutViewModel
-                {
-                    WorkoutPerPage = 2,
-                    Workouts = await _fCServices.FindWorkout(search),
-                    CurrentPage = page
-                };
-                return View(intView);
-            }
-            else
-            {
-                var intView = new WorkoutViewModel
-                {
-                    WorkoutPerPage = 2,
-                    Workouts = await _fCServices.AllWorkout(),
-                    CurrentPage = page
-                };
-                return View(intView);
-            }
+            //Do code here
+            throw new NotImplementedException();
         }
         /// <summary>
         /// Get  full details of Workout by WorkoutId
@@ -58,17 +40,17 @@ namespace FitnessClubManagement.Controllers
         [HttpGet]
         public async Task<IActionResult> Details(int workoutId)
         {
-            var place = await _fCServices.GetWorkoutById(workoutId);
-            return View(place);
+            //Do code here
+            throw new NotImplementedException();
         }
         /// <summary>
-        /// Show all Diet Plan for Vistor and GYMER
+        /// Show all Diet Plan for Vistor and GYMER 'Use IEnumerable<DietPlan>'
         /// </summary>
         /// <returns></returns>
         public async Task<IActionResult> DietPlan()
         {
-            IEnumerable<DietPlan> diet = await _fCServices.AllDietPlan();
-            return View(diet);
+            //Do code here
+            throw new NotImplementedException();
         }
         /// <summary>
         /// Get full details of Diet Plan.
@@ -78,8 +60,8 @@ namespace FitnessClubManagement.Controllers
         [HttpGet]
         public async Task<IActionResult> DietPlanDetails(int dietplanId)
         {
-            var diet = await _fCServices.GetDietPlanById(dietplanId);
-            return View(diet);
+            //Do code here
+            throw new NotImplementedException();
         }
         /// <summary>
         /// Book a appointment with GYM Trainer
@@ -98,24 +80,8 @@ namespace FitnessClubManagement.Controllers
         [HttpPost]
         public async Task<IActionResult> Bookappointment(Appointment appointment)
         {
-            if (ModelState.IsValid)
-            {
-                Appointment newappointment = new Appointment
-                {
-                    FullName = appointment.FullName,
-                    CurrentWeight = appointment.CurrentWeight,
-                    Height = appointment.Height,
-                    Age = appointment.Age,
-                    GoalWeight = appointment.GoalWeight,
-                    Address = appointment.Address,
-                    PhoneNumber = appointment.PhoneNumber,
-                    Email = appointment.Email,
-                    Remark = appointment.Remark
-                };
-                var result = await _fCServices.BookAppointment(newappointment);
-                return RedirectToAction("AppointInfo", "Fitness", new { appointmentId = result.AppointmentId });
-            }
-            return View();
+            //Do code here
+            throw new NotImplementedException();
         }
         /// <summary>
         /// Get appointment ifo for user
@@ -125,8 +91,8 @@ namespace FitnessClubManagement.Controllers
         [HttpGet]
         public async Task<IActionResult> AppointInfo(int appointmentId)
         {
-            var appoint = await _fCServices.AppointmentInformation(appointmentId);
-            return View(appoint);
+            //Do code here
+            throw new NotImplementedException();
         }
         /// <summary>
         /// List of tools we use at gym for information
@@ -134,8 +100,8 @@ namespace FitnessClubManagement.Controllers
         /// <returns></returns>
         public async Task<IActionResult> Toolsanddescription()
         {
-            IEnumerable<Tools> tools = await _fCServices.AllTools();
-            return View(tools);
+            //Do code here
+            throw new NotImplementedException();
         }
         /// <summary>
         /// Know about GYM instructor
@@ -143,8 +109,8 @@ namespace FitnessClubManagement.Controllers
         /// <returns></returns>
         public async Task<IActionResult> GymInstructor()
         {
-            IEnumerable<Instructor> instructor = await _fCServices.AllInstructor();
-            return View(instructor);
+            //Do code here
+            throw new NotImplementedException();
         }
     }
 }

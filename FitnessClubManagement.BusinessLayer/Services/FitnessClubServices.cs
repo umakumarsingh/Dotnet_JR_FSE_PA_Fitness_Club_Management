@@ -22,8 +22,8 @@ namespace FitnessClubManagement.BusinessLayer.Services
         }
         public async Task<IEnumerable<DietPlan>> AllDietPlan()
         {
-            var diet = await _fCRepository.AllDietPlan();
-            return diet;
+            //Do code here
+            throw new NotImplementedException();
         }
         /// <summary>
         /// Get all Instructor
@@ -31,8 +31,8 @@ namespace FitnessClubManagement.BusinessLayer.Services
         /// <returns></returns>
         public async Task<IEnumerable<Instructor>> AllInstructor()
         {
-            var instructor = await _fCRepository.AllInstructor();
-            return instructor;
+            //Do code here
+            throw new NotImplementedException();
         }
         /// <summary>
         /// Get list of Tools 
@@ -40,8 +40,8 @@ namespace FitnessClubManagement.BusinessLayer.Services
         /// <returns></returns>
         public async Task<IEnumerable<Tools>> AllTools()
         {
-            var tool = await _fCRepository.AllTools();
-            return tool;
+            //Do code here
+            throw new NotImplementedException();
         }
         /// <summary>
         /// Get List of all workout
@@ -49,8 +49,8 @@ namespace FitnessClubManagement.BusinessLayer.Services
         /// <returns></returns>
         public async Task<IEnumerable<Workout>> AllWorkout()
         {
-            var workout = await _fCRepository.AllWorkout();
-            return workout;
+            //Do code here
+            throw new NotImplementedException();
         }
         /// <summary>
         /// Get Appointment Information
@@ -59,10 +59,9 @@ namespace FitnessClubManagement.BusinessLayer.Services
         /// <returns></returns>
         public async Task<IEnumerable<Appointment>> AppointmentInformation(int appointmentId)
         {
-            var info = await _fCRepository.AppointmentInformation(appointmentId);
-            return info;
+            //Do code here
+            throw new NotImplementedException();
         }
-
         /// <summary>
         /// Book Appointment for Demo 
         /// </summary>
@@ -70,8 +69,8 @@ namespace FitnessClubManagement.BusinessLayer.Services
         /// <returns></returns>
         public async Task<Appointment> BookAppointment(Appointment appointment)
         {
-            var appoint = await _fCRepository.BookAppointment(appointment);
-            return appoint;
+            //Do code here
+            throw new NotImplementedException();
         }
         /// <summary>
         /// Find a workout from Workout Collection
@@ -80,8 +79,8 @@ namespace FitnessClubManagement.BusinessLayer.Services
         /// <returns></returns>
         public async Task<IEnumerable<Workout>> FindWorkout(string name)
         {
-            var workout = await _fCRepository.FindWorkout(name);
-            return workout;
+            //Do code here
+            throw new NotImplementedException();
         }
         /// <summary>
         /// Get Diet Plan by Id
@@ -90,10 +89,9 @@ namespace FitnessClubManagement.BusinessLayer.Services
         /// <returns></returns>
         public async Task<DietPlan> GetDietPlanById(int dietplanId)
         {
-            var dietPlan = await _fCRepository.GetDietPlanById(dietplanId);
-            return dietPlan;
+            //Do code here
+            throw new NotImplementedException();
         }
-
         /// <summary>
         /// Get aworkout by Id
         /// </summary>
@@ -101,8 +99,8 @@ namespace FitnessClubManagement.BusinessLayer.Services
         /// <returns></returns>
         public async Task<Workout> GetWorkoutById(int workoutId)
         {
-            var workout = await _fCRepository.GetWorkoutById(workoutId);
-            return workout;
+            //Do code here
+            throw new NotImplementedException();
         }
     }
 }
